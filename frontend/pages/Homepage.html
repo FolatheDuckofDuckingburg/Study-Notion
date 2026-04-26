@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study-Notion - E-Learning Platform</title>
+    <title>Study-Notion - SAT Prep & Test Mastery Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,15 +14,16 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center space-x-2">
-                    <i class="fas fa-book text-blue-600 text-2xl"></i>
+                    <i class="fas fa-brain text-blue-600 text-2xl"></i>
                     <span class="font-bold text-xl text-gray-800">Study-Notion</span>
                 </div>
 
                 <!-- Nav Links -->
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
-                    <a href="#courses" class="text-gray-700 hover:text-blue-600 transition">Courses</a>
                     <a href="#features" class="text-gray-700 hover:text-blue-600 transition">Features</a>
+                    <a href="#subjects" class="text-gray-700 hover:text-blue-600 transition">SAT Prep</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition">Results</a>
                     <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
                 </div>
 
@@ -32,7 +33,7 @@
                         Sign In
                     </button>
                     <button onclick="openSignupModal()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
-                        Sign Up
+                        Start Free
                     </button>
                 </div>
             </div>
@@ -40,21 +41,28 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+    <section id="home" class="bg-gradient-to-r from-blue-600 to-indigo-800 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
                 <div>
-                    <h1 class="text-5xl font-bold mb-6">Learn Anything, Anytime, Anywhere</h1>
-                    <p class="text-xl text-blue-100 mb-8">
-                        Discover thousands of courses on every topic. Study-Notion makes learning accessible, engaging, and effective for educators, students, and institutions.
+                    <h1 class="text-5xl font-bold mb-6">Master the SAT with Study-Notion</h1>
+                    <p class="text-xl text-blue-100 mb-4">
+                        Ace your SAT with our comprehensive prep platform featuring:
                     </p>
+                    <ul class="space-y-2 text-lg text-blue-100 mb-8">
+                        <li>✓ 5,000+ SAT practice questions</li>
+                        <li>✓ Interactive flashcards & study sets</li>
+                        <li>✓ Full-length practice tests</li>
+                        <li>✓ AI-powered personalized learning</li>
+                        <li>✓ Expert video explanations</li>
+                    </ul>
                     <div class="flex space-x-4">
-                        <button onclick="scrollToSection('courses')" class="px-8 py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition">
-                            Explore Courses
+                        <button onclick="scrollToSection('subjects')" class="px-8 py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition">
+                            Start Prep Now
                         </button>
-                        <button onclick="alert('Learn more about Study-Notion!')" class="px-8 py-3 border-2 border-white text-white rounded-lg hover:bg-blue-700 transition">
-                            Learn More
+                        <button onclick="alert('Watch how Study-Notion helps students score higher!')" class="px-8 py-3 border-2 border-white text-white rounded-lg hover:bg-blue-700 transition">
+                            Watch Demo
                         </button>
                     </div>
                 </div>
@@ -62,90 +70,7 @@
                 <!-- Right Visual -->
                 <div class="flex justify-center">
                     <div class="bg-blue-400 rounded-lg p-8 w-full h-64 flex items-center justify-center">
-                        <i class="fas fa-graduation-cap text-6xl text-white opacity-50"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-12">Why Choose Study-Notion?</h2>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
-                    <div class="text-4xl text-blue-600 mb-4">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Comprehensive Courses</h3>
-                    <p class="text-gray-600">Access a vast library of courses across multiple subjects and skill levels.</p>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
-                    <div class="text-4xl text-blue-600 mb-4">
-                        <i class="fas fa-chalkboard-user"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Expert Instructors</h3>
-                    <p class="text-gray-600">Learn from industry experts and experienced educators worldwide.</p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
-                    <div class="text-4xl text-blue-600 mb-4">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Progress Tracking</h3>
-                    <p class="text-gray-600">Monitor your learning progress with detailed analytics and insights.</p>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
-                    <div class="text-4xl text-blue-600 mb-4">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Community Learning</h3>
-                    <p class="text-gray-600">Connect and collaborate with peers and instructors in real-time.</p>
-                </div>
-
-                <!-- Feature 5 -->
-                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
-                    <div class="text-4xl text-blue-600 mb-4">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Responsive Design</h3>
-                    <p class="text-gray-600">Learn on any device - desktop, tablet, or mobile phone.</p>
-                </div>
-
-                <!-- Feature 6 -->
-                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
-                    <div class="text-4xl text-blue-600 mb-4">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Certifications</h3>
-                    <p class="text-gray-600">Earn recognized certificates upon course completion.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Courses Section -->
-    <section id="courses" class="py-20 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4">Popular Courses</h2>
-            <p class="text-center text-gray-600 mb-12 text-lg">Explore our most popular and highly-rated courses</p>
-            
-            <div id="courses-container" class="grid md:grid-cols-3 gap-8">
-                <!-- Courses will be loaded here via API -->
-                <div class="flex justify-center items-center col-span-3">
-                    <div class="text-center">
-                        <div class="animate-spin inline-block">
-                            <i class="fas fa-spinner text-4xl text-blue-600"></i>
-                        </div>
-                        <p class="mt-4 text-gray-600">Loading courses...</p>
+                        <i class="fas fa-chart-line text-6xl text-white opacity-50"></i>
                     </div>
                 </div>
             </div>
@@ -153,36 +78,338 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="bg-blue-600 text-white py-16">
+    <section class="bg-white py-12 border-b">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 text-center">
                 <div>
-                    <h3 class="text-4xl font-bold mb-2">10K+</h3>
-                    <p class="text-blue-100">Active Students</p>
+                    <h3 class="text-3xl font-bold text-blue-600 mb-2">500K+</h3>
+                    <p class="text-gray-600">Active Students</p>
                 </div>
                 <div>
-                    <h3 class="text-4xl font-bold mb-2">500+</h3>
-                    <p class="text-blue-100">Expert Courses</p>
+                    <h3 class="text-3xl font-bold text-blue-600 mb-2">1540</h3>
+                    <p class="text-gray-600">Average Score Increase</p>
                 </div>
                 <div>
-                    <h3 class="text-4xl font-bold mb-2">95%</h3>
-                    <p class="text-blue-100">Satisfaction Rate</p>
+                    <h3 class="text-3xl font-bold text-blue-600 mb-2">98%</h3>
+                    <p class="text-gray-600">College Acceptance Rate</p>
                 </div>
                 <div>
-                    <h3 class="text-4xl font-bold mb-2">24/7</h3>
-                    <p class="text-blue-100">Support Available</p>
+                    <h3 class="text-3xl font-bold text-blue-600 mb-2">24/7</h3>
+                    <p class="text-gray-600">Expert Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">Powerful Study Tools</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="text-5xl text-blue-600 mb-4">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Interactive Flashcards</h3>
+                    <p class="text-gray-600 mb-4">Create custom study sets or use pre-made ones. Quiz yourself with spaced repetition for optimal retention.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ Custom flashcard sets</li>
+                        <li>✓ Spaced repetition algorithm</li>
+                        <li>✓ Image & audio support</li>
+                        <li>✓ Progress tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="text-5xl text-blue-600 mb-4">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Full-Length Practice Tests</h3>
+                    <p class="text-gray-600 mb-4">Take official SAT-style tests under timed conditions. Get detailed score breakdowns and personalized recommendations.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ Realistic SAT format</li>
+                        <li>✓ Timed sections</li>
+                        <li>✓ Instant scoring</li>
+                        <li>✓ Performance analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="text-5xl text-blue-600 mb-4">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Expert Video Lessons</h3>
+                    <p class="text-gray-600 mb-4">Watch short, focused videos on every SAT topic. Learn from experienced educators and test prep experts.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ 10-minute video lessons</li>
+                        <li>✓ Concept breakdowns</li>
+                        <li>✓ Strategy tips & tricks</li>
+                        <li>✓ Downloadable notes</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="text-5xl text-blue-600 mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">AI-Powered Learning</h3>
+                    <p class="text-gray-600 mb-4">Our AI adapts to your learning style, identifying weak areas and suggesting targeted practice.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ Personalized study plan</li>
+                        <li>✓ Smart recommendations</li>
+                        <li>✓ Weakness detection</li>
+                        <li>✓ Goal tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="text-5xl text-blue-600 mb-4">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Detailed Analytics</h3>
+                    <p class="text-gray-600 mb-4">Track your progress with comprehensive reports. See what you've mastered and where to focus next.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ Score trends</li>
+                        <li>✓ Topic performance</li>
+                        <li>✓ Time management stats</li>
+                        <li>✓ Projected scores</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="text-5xl text-blue-600 mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Study Groups & Community</h3>
+                    <p class="text-gray-600 mb-4">Connect with other students, share flashcard sets, and get support from the Study-Notion community.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ Study groups</li>
+                        <li>✓ Shared resources</li>
+                        <li>✓ Q&A forum</li>
+                        <li>✓ Peer learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAT Subjects Section -->
+    <section id="subjects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-4">Complete SAT Coverage</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">Master every SAT section with our comprehensive curriculum</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Reading & Writing -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg border-l-4 border-blue-600">
+                    <div class="text-4xl text-blue-600 mb-4">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Reading & Writing</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ 2,000+ practice questions</li>
+                        <li>✓ Passage comprehension</li>
+                        <li>✓ Grammar & syntax</li>
+                        <li>✓ Vocabulary building</li>
+                        <li>✓ Time management drills</li>
+                    </ul>
+                    <button onclick="alert('Start Reading & Writing prep')" class="w-full mt-6 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                        Begin Practice
+                    </button>
+                </div>
+
+                <!-- Math -->
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg border-l-4 border-green-600">
+                    <div class="text-4xl text-green-600 mb-4">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Math</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ 2,500+ practice problems</li>
+                        <li>✓ Algebra & functions</li>
+                        <li>✓ Geometry & trigonometry</li>
+                        <li>✓ Statistics & probability</li>
+                        <li>✓ Step-by-step solutions</li>
+                    </ul>
+                    <button onclick="alert('Start Math prep')" class="w-full mt-6 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+                        Begin Practice
+                    </button>
+                </div>
+
+                <!-- Essay Optional -->
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-lg border-l-4 border-purple-600">
+                    <div class="text-4xl text-purple-600 mb-4">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Essay Writing</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>✓ Essay structure & format</li>
+                        <li>✓ Argument analysis</li>
+                        <li>✓ Proofreading tips</li>
+                        <li>✓ Sample essays</li>
+                        <li>✓ Writing feedback</li>
+                    </ul>
+                    <button onclick="alert('Start Essay prep')" class="w-full mt-6 bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition">
+                        Begin Practice
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials/Results Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">Student Success Stories</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                            SA
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Sarah Anderson</h4>
+                            <p class="text-sm text-gray-600">Harvard Class of 2025</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700">"Study-Notion helped me improve from 1350 to 1520! The flashcards and practice tests were game-changers. Highly recommend!"</p>
+                    <p class="text-blue-600 font-bold mt-3">Score: 1520 (+170 points)</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold">
+                            MJ
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Marcus Johnson</h4>
+                            <p class="text-sm text-gray-600">MIT Class of 2024</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700">"The AI-powered learning plan was incredibly personalized. It identified my math weakness and helped me ace it. 1550!"</p>
+                    <p class="text-green-600 font-bold mt-3">Score: 1550 (+200 points)</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
+                            EW
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Emily Wong</h4>
+                            <p class="text-sm text-gray-600">Stanford Class of 2026</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700">"The full-length practice tests were exactly like the real SAT. Took 5 tests and each time my score improved. Study-Notion works!"</p>
+                    <p class="text-purple-600 font-bold mt-3">Score: 1510 (+165 points)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">Simple, Transparent Pricing</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Free Plan -->
+                <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-2">Free</h3>
+                    <p class="text-gray-600 mb-6">Perfect for getting started</p>
+                    <div class="text-3xl font-bold text-blue-600 mb-6">$0<span class="text-lg text-gray-600">/month</span></div>
+                    <ul class="space-y-3 mb-8 text-gray-700">
+                        <li>✓ Basic flashcards</li>
+                        <li>✓ 200+ practice questions</li>
+                        <li>✓ Limited practice tests</li>
+                        <li>✗ Video lessons</li>
+                        <li>✗ AI personalization</li>
+                    </ul>
+                    <button onclick="openSignupModal()" class="w-full border-2 border-blue-600 text-blue-600 py-2 rounded-lg hover:bg-blue-50 transition">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="bg-gradient-to-br from-blue-600 to-indigo-700 p-8 rounded-lg text-white transform scale-105 shadow-xl">
+                    <div class="bg-yellow-400 text-blue-600 px-3 py-1 rounded-full w-fit text-sm font-bold mb-4">
+                        Most Popular
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Premium</h3>
+                    <p class="text-blue-100 mb-6">Complete SAT mastery</p>
+                    <div class="text-3xl font-bold mb-6">$9.99<span class="text-lg text-blue-100">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li>✓ Unlimited flashcards</li>
+                        <li>✓ 5,000+ practice questions</li>
+                        <li>✓ Full-length practice tests</li>
+                        <li>✓ All video lessons</li>
+                        <li>✓ AI personalization</li>
+                        <li>✓ Study group access</li>
+                    </ul>
+                    <button onclick="openSignupModal()" class="w-full bg-white text-blue-600 py-2 rounded-lg hover:bg-gray-100 transition font-bold">
+                        Start Free Trial
+                    </button>
+                </div>
+
+                <!-- Premium Plus Plan -->
+                <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-2">Premium Plus</h3>
+                    <p class="text-gray-600 mb-6">1-on-1 expert tutoring included</p>
+                    <div class="text-3xl font-bold text-blue-600 mb-6">$19.99<span class="text-lg text-gray-600">/month</span></div>
+                    <ul class="space-y-3 mb-8 text-gray-700">
+                        <li>✓ Everything in Premium</li>
+                        <li>✓ 4 tutoring sessions/month</li>
+                        <li>✓ Essay review & feedback</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Customized study plan</li>
+                    </ul>
+                    <button onclick="openSignupModal()" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-bold">
+                        Get Premium Plus
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12">
                 <!-- Contact Form -->
                 <div>
-                    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+                    <h2 class="text-3xl font-bold mb-6">Questions? We're Here to Help</h2>
                     <form id="contact-form" class="space-y-4">
                         <div>
                             <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
@@ -203,27 +430,7 @@
                 <div class="space-y-6">
                     <div>
                         <h3 class="text-xl font-bold mb-2">Contact Information</h3>
-                        <p class="text-gray-600">Reach out to us for any questions or support.</p>
-                    </div>
-
-                    <div class="flex space-x-4">
-                        <div class="text-2xl text-blue-600">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Address</h4>
-                            <p class="text-gray-600">123 Education St, Learning City, LC 12345</p>
-                        </div>
-                    </div>
-
-                    <div class="flex space-x-4">
-                        <div class="text-2xl text-blue-600">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Phone</h4>
-                            <p class="text-gray-600">+1 (555) 123-4567</p>
-                        </div>
+                        <p class="text-gray-600">Reach out to us for questions about SAT prep, features, or anything else!</p>
                     </div>
 
                     <div class="flex space-x-4">
@@ -236,11 +443,31 @@
                         </div>
                     </div>
 
+                    <div class="flex space-x-4">
+                        <div class="text-2xl text-blue-600">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Phone</h4>
+                            <p class="text-gray-600">+1 (800) SAT-PREP</p>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <div class="text-2xl text-blue-600">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Address</h4>
+                            <p class="text-gray-600">123 Education Ave, Boston, MA 02101</p>
+                        </div>
+                    </div>
+
                     <div class="flex space-x-4 pt-4">
                         <a href="#" class="text-2xl text-blue-600 hover:text-blue-800"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="text-2xl text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-2xl text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="text-2xl text-blue-600 hover:text-blue-800"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl text-blue-600 hover:text-blue-800"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -252,30 +479,30 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h4 class="text-white font-bold mb-4">About</h4>
+                    <h4 class="text-white font-bold mb-4">SAT Prep</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Practice Questions</a></li>
+                        <li><a href="#" class="hover:text-white transition">Full Tests</a></li>
+                        <li><a href="#" class="hover:text-white transition">Video Lessons</a></li>
+                        <li><a href="#" class="hover:text-white transition">Flashcards</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Test Strategies</a></li>
+                        <li><a href="#" class="hover:text-white transition">College Guide</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="#" class="hover:text-white transition">About Us</a></li>
-                        <li><a href="#" class="hover:text-white transition">Our Team</a></li>
-                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
                         <li><a href="#" class="hover:text-white transition">Careers</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-4">Courses</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">All Courses</a></li>
-                        <li><a href="#" class="hover:text-white transition">Categories</a></li>
-                        <li><a href="#" class="hover:text-white transition">New Courses</a></li>
-                        <li><a href="#" class="hover:text-white transition">Best Sellers</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-4">Support</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
-                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
-                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
-                        <li><a href="#" class="hover:text-white transition">Feedback</a></li>
+                        <li><a href="#" class="hover:text-white transition">Press</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
                 <div>
@@ -289,7 +516,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-700 pt-8 text-center text-sm">
-                <p>&copy; 2026 Study-Notion. All rights reserved. | Made with ❤️ by the Study-Notion Community</p>
+                <p>&copy; 2026 Study-Notion. SAT is a registered trademark of the College Board. All rights reserved. | Made with ❤️ for Students</p>
             </div>
         </div>
     </footer>
@@ -300,7 +527,7 @@
             <button onclick="closeLoginModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
                 <i class="fas fa-times text-2xl"></i>
             </button>
-            <h2 class="text-2xl font-bold mb-6">Sign In</h2>
+            <h2 class="text-2xl font-bold mb-6">Sign In to Study-Notion</h2>
             <form id="login-form" class="space-y-4">
                 <input type="email" placeholder="Email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
                 <input type="password" placeholder="Password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
@@ -309,7 +536,7 @@
                 </button>
             </form>
             <p class="text-center mt-4 text-sm text-gray-600">
-                Don't have an account? <button onclick="switchToSignup()" class="text-blue-600 hover:underline">Sign Up</button>
+                Don't have an account? <button onclick="switchToSignup()" class="text-blue-600 hover:underline">Start free trial</button>
             </p>
         </div>
     </div>
@@ -320,19 +547,20 @@
             <button onclick="closeSignupModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
                 <i class="fas fa-times text-2xl"></i>
             </button>
-            <h2 class="text-2xl font-bold mb-6">Create Account</h2>
+            <h2 class="text-2xl font-bold mb-6">Start SAT Prep for Free</h2>
             <form id="signup-form" class="space-y-4">
                 <input type="text" placeholder="Full Name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
                 <input type="email" placeholder="Email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
                 <input type="password" placeholder="Password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
                 <input type="password" placeholder="Confirm Password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
                 <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                    Create Account
+                    Create Free Account
                 </button>
             </form>
             <p class="text-center mt-4 text-sm text-gray-600">
                 Already have an account? <button onclick="switchToLogin()" class="text-blue-600 hover:underline">Sign In</button>
             </p>
+            <p class="text-center mt-2 text-xs text-gray-500">7-day free trial. No credit card required.</p>
         </div>
     </div>
 
@@ -375,113 +603,9 @@
             element.scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Fetch Courses from API
-        async function fetchCourses() {
-            try {
-                const response = await fetch(`${API_BASE_URL}/courses`);
-                const data = await response.json();
-                displayCourses(data);
-            } catch (error) {
-                console.error('Error fetching courses:', error);
-                displayMockCourses();
-            }
-        }
-
-        function displayCourses(courses) {
-            const container = document.getElementById('courses-container');
-            
-            if (!courses || courses.length === 0) {
-                displayMockCourses();
-                return;
-            }
-
-            container.innerHTML = courses.slice(0, 3).map(course => `
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-40 flex items-center justify-center">
-                        <i class="fas fa-${getIconForCategory(course.category)} text-5xl text-white opacity-50"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">${course.name || course.title}</h3>
-                        <p class="text-gray-600 text-sm mb-4">${course.description || 'Master this comprehensive course'}</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="text-lg font-bold text-blue-600">$${course.price || '49.99'}</span>
-                            <span class="flex items-center text-yellow-500">
-                                <i class="fas fa-star"></i>
-                                <span class="ml-1 text-sm text-gray-700">${course.rating || '4.8'}</span>
-                            </span>
-                        </div>
-                        <button onclick="alert('Enroll in ${course.name || course.title}')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                            Enroll Now
-                        </button>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function displayMockCourses() {
-            const container = document.getElementById('courses-container');
-            const mockCourses = [
-                {
-                    name: 'Web Development Mastery',
-                    description: 'Learn HTML, CSS, JavaScript, and modern frameworks',
-                    price: '49.99',
-                    rating: '4.9',
-                    category: 'code'
-                },
-                {
-                    name: 'Data Science Fundamentals',
-                    description: 'Python, data analysis, and machine learning basics',
-                    price: '59.99',
-                    rating: '4.8',
-                    category: 'chart-bar'
-                },
-                {
-                    name: 'UI/UX Design Bootcamp',
-                    description: 'Create stunning user interfaces and experiences',
-                    price: '44.99',
-                    rating: '4.7',
-                    category: 'palette'
-                }
-            ];
-
-            container.innerHTML = mockCourses.map(course => `
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-40 flex items-center justify-center">
-                        <i class="fas fa-${course.category} text-5xl text-white opacity-50"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">${course.name}</h3>
-                        <p class="text-gray-600 text-sm mb-4">${course.description}</p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="text-lg font-bold text-blue-600">$${course.price}</span>
-                            <span class="flex items-center text-yellow-500">
-                                <i class="fas fa-star"></i>
-                                <span class="ml-1 text-sm text-gray-700">${course.rating}</span>
-                            </span>
-                        </div>
-                        <button onclick="alert('Enroll in ${course.name}')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                            Enroll Now
-                        </button>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function getIconForCategory(category) {
-            const iconMap = {
-                'programming': 'code',
-                'data-science': 'chart-bar',
-                'design': 'palette',
-                'business': 'briefcase',
-                'marketing': 'megaphone'
-            };
-            return iconMap[category] || 'book';
-        }
-
         // Form Handlers
         document.getElementById('login-form')?.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const formData = new FormData(e.target);
             
             try {
                 const response = await fetch(`${API_BASE_URL}/auth/login`, {
@@ -494,14 +618,14 @@
                 });
                 
                 if (response.ok) {
-                    alert('Login successful!');
+                    alert('Login successful! Redirecting to dashboard...');
                     closeLoginModal();
                 } else {
-                    alert('Login failed. Please try again.');
+                    alert('Login failed. Please check your credentials.');
                 }
             } catch (error) {
                 console.error('Login error:', error);
-                alert('Login error. Please check your credentials.');
+                alert('Login error. Please try again.');
             }
         });
 
@@ -528,9 +652,8 @@
                 });
                 
                 if (response.ok) {
-                    alert('Account created successfully! Please sign in.');
+                    alert('Account created! Starting your 7-day free trial...');
                     closeSignupModal();
-                    openLoginModal();
                 } else {
                     alert('Signup failed. Please try again.');
                 }
@@ -565,9 +688,6 @@
                 alert('Error sending message. Please try again.');
             }
         });
-
-        // Load courses on page load
-        document.addEventListener('DOMContentLoaded', fetchCourses);
     </script>
 </body>
 </html>
